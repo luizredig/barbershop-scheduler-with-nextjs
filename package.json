@@ -6,9 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
   },
   "dependencies": {
+    "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
     "next": "15.0.4",
     "react": "^19.0.0",
