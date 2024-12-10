@@ -1,6 +1,7 @@
 import TodayUserBookingCarousel from "./components/carousel/TodayUserBookingCarousel";
 import UserDate from "./components/home/UserDate";
 import BarbershopSearch from "./components/search/BarbershopSearch";
+import Title from "./components/typograph/Title";
 
 const Home = () => {
   return (
@@ -14,14 +15,16 @@ const Home = () => {
           <BarbershopSearch />
         </div>
 
-        <div className="flex h-full w-full flex-col justify-center gap-2">
-          <span className="px-5 font-semibold uppercase text-muted-foreground">
-            Bookings
-          </span>
+        <div className="flex h-full w-full flex-col justify-center gap-3">
+          <Title title={"Bookings"} className="px-5" />
 
           <div className="flex w-full justify-center px-[70px]">
             <TodayUserBookingCarousel />
           </div>
+        </div>
+
+        <div className="flex flex-col gap-3">
+          <Title title={"Recommended"} className="px-5" />
         </div>
       </div>
     </>
