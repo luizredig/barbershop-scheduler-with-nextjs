@@ -1,5 +1,6 @@
 import TodayUserBookingCarousel from "./components/carousel/TodayUserBookingCarousel";
 import UserDate from "./components/home/UserDate";
+import RecommendedBarberShopRow from "./components/row/barbershop/RecommendedBarberShopRow";
 import BarbershopSearch from "./components/search/BarbershopSearch";
 import Title from "./components/typograph/Title";
 
@@ -25,6 +26,8 @@ const Home = () => {
 
         <div className="flex flex-col gap-3">
           <Title title={"Recommended"} className="px-5" />
+
+          <RecommendedBarberShopRow />
         </div>
       </div>
     </>
