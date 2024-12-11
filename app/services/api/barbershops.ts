@@ -1,11 +1,15 @@
-import api from "@/app/lib/axios";
+import { prismaClient } from "@/app/lib/prisma";
+import { Barbershop } from "@prisma/client";
 
 export async function fetchAllBarbershops() {
   try {
-    const response = await api.get("/barbershops/all");
-    return response.data;
+    const barbershops: Barbershop[] = await prismaClient.barbershop.findMany(
+      {},
+    );
+
+    return barbershops;
   } catch (error) {
     console.error("Error fetching barbershops:", error);
-    throw new Error("Failed to fetch barbershops");
+    throw new Error("Failed to fetch barbershops: Unknown error");
   }
 }
