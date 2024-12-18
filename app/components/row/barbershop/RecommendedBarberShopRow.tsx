@@ -7,7 +7,7 @@ const RecommendedBarberShopRow = async () => {
 
   return (
     <>
-      <div className="flex w-full gap-4 overflow-x-auto px-5 [&::-webkit-scrollbar]:hidden">
+      <div className="flex w-full gap-4 overflow-x-auto px-5 [&::-webkit-scrollbar]:hidden md:[&::-webkit-scrollbar]:flex">
         {barbershops.map((barbershop: Barbershop) => (
           <BarbershopCard key={barbershop.id} barbershop={barbershop} />
         ))}

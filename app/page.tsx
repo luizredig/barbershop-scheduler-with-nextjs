@@ -1,3 +1,5 @@
+import "@/app/css/scrollbar.css";
+
 import TodayUserBookingCarousel from "./components/carousel/TodayUserBookingCarousel";
 import UserDate from "./components/home/UserDate";
 import RecommendedBarberShopRow from "./components/row/barbershop/RecommendedBarberShopRow";
