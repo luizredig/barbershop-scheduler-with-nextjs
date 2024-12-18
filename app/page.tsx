@@ -4,7 +4,7 @@ import TodayUserBookingCarousel from "./components/carousel/TodayUserBookingCaro
 import UserDate from "./components/home/UserDate";
 import RecommendedBarberShopRow from "./components/row/barbershop/RecommendedBarberShopRow";
 import BarbershopSearch from "./components/search/BarbershopSearch";
-import Title from "./components/typograph/Title";
+import Title from "./components/typography/Title";
 
 const Home = () => {
   return (
