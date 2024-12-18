@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
+import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Barbershop Scheduler",
@@ -26,14 +15,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
         <main className="flex h-full flex-col overflow-y-hidden">
           <Header />
 
           <div className="h flex flex-1 flex-col overflow-y-auto">
             {children}
+
+            <Footer />
           </div>
         </main>
       </body>

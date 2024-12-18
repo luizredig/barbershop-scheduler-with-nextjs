@@ -9,7 +9,7 @@ import Title from "./components/typograph/Title";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col gap-5 pt-5">
+      <div className="flex flex-col gap-5 pb-12 pt-5">
         <div className="px-5">
           <UserDate />
         </div>
