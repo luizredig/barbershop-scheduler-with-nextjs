@@ -1,5 +1,6 @@
 import { Barbershop } from "@prisma/client";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "../../ui/button";
 import { Card, CardContent } from "../../ui/card";
 
@@ -32,7 +33,9 @@ const BarbershopCard = ({ barbershop }: BarbershopCardProps) => {
               </span>
             </div>
 
-            <Button className="bg-muted font-semibold">Book</Button>
+            <Link href={`/barbershop/${barbershop.id}`} className="flex w-full">
+              <Button className="w-full bg-muted font-semibold">Book</Button>
+            </Link>
           </div>
         </CardContent>
       </Card>
