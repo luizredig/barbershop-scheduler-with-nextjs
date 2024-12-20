@@ -9,7 +9,7 @@ import Title from "./components/typography/Title";
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col gap-5 pb-12 pt-5">
+      <div className="flex w-full flex-col gap-5 pb-12 pt-5">
         <div className="px-5">
           <UserDate />
         </div>
@@ -18,7 +18,7 @@ const Home = () => {
           <BarbershopSearch />
         </div>
 
-        <div className="flex h-full w-full flex-col justify-center gap-3">
+        <div className="flex w-full flex-col justify-center gap-3">
           <Title title={"Bookings"} className="px-5" />
 
           <div className="flex w-full justify-center px-[70px]">
