@@ -17,7 +17,7 @@ const TodayUserBookingCarousel = async () => {
       <Carousel orientation="horizontal" className="w-full">
         <CarouselContent className="w-full">
           {bookings.length === 0 ? (
-            <CarouselItem className="flex justify-center">
+            <CarouselItem className="flex h-[111px] items-center justify-center">
               <div>✂️ No bookings for today.</div>
             </CarouselItem>
           ) : (
