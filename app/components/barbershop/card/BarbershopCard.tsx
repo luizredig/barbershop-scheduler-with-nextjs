@@ -11,9 +11,9 @@ type BarbershopCardProps = {
 const BarbershopCard = ({ barbershop }: BarbershopCardProps) => {
   return (
     <>
-      <Card className="h-72 w-40 min-w-40 max-w-40 rounded-2xl">
+      <Card className="h-[291px] w-[167px] min-w-[167px] max-w-[167px] rounded-2xl">
         <CardContent className="flex h-full w-full flex-col p-0">
-          <div className="max-h-1/2 flex h-1/2">
+          <div className="flex h-[159px] max-h-[159px]">
             <Image
               src={barbershop.imageUrl}
               width={0}
