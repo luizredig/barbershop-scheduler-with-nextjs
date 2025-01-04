@@ -2,7 +2,7 @@ import { fetchAllBarbershops } from "@/app/services/api/barbershops";
 import { Barbershop } from "@prisma/client";
 import BarbershopCard from "../../barbershop/card/BarbershopCard";
 
-const RecommendedBarberShopsRow = async () => {
+const PopularBarbershopsRow = async () => {
   const barbershops = await fetchAllBarbershops();
 
   return (
@@ -16,4 +16,4 @@ const RecommendedBarberShopsRow = async () => {
   );
 };
 
-export default RecommendedBarberShopsRow;
+export default PopularBarbershopsRow;

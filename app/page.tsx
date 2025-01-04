@@ -2,9 +2,10 @@ import "@/app/css/scrollbar.css";
 
 import TodayUserBookingCarousel from "./components/carousel/TodayUserBookingCarousel";
 import UserDate from "./components/home/UserDate";
-import RecommendedBarberShopRow from "./components/row/barbershop/RecommendedBarberShopRow";
+import RecommendedBarberShopsRow from "./components/row/barbershop/RecommendedBarberShopRow";
 import BarbershopSearch from "./components/search/BarbershopSearch";
 import Title from "./components/typography/Title";
+import PopularBarbershopsRow from "./components/row/barbershop/PopularBarbershopsRow";
 
 const Home = () => {
   return (
@@ -29,7 +30,13 @@ const Home = () => {
         <div className="flex flex-col gap-3">
           <Title title={"Recommended"} className="px-5" />
 
-          <RecommendedBarberShopRow />
+          <RecommendedBarberShopsRow />
+        </div>
+
+        <div className="flex flex-col gap-3">
+          <Title title={"Popular"} className="px-5" />
+
+          <PopularBarbershopsRow />
         </div>
       </div>
     </>
