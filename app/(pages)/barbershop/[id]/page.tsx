@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import { getBarbershopById } from "@/app/services/api/barbershops";
-import { NavigationType } from "@/app/types/navigation";
 
-export default async function BarbershopPage({ params }: NavigationType) {
-  const { id } = await params;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function BarbershopPage({ params }: any) {
+  const { id } = params;
 
   if (!id) {
     notFound();
